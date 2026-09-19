@@ -42,6 +42,7 @@
       <a href="bieres.html" class="nav-link u-underline">Bières</a>
       <a href="spiritueux.html" class="nav-link u-underline">Spiritueux</a>
       <a href="epicerie.html" class="nav-link u-underline is-active">Épicerie fine</a>
+      <a href="evenements.html" class="nav-link u-underline">Événements</a>
       <a href="contact.html" class="nav-link u-underline">Contact</a>
     </div>
     <button type="button" class="nav-burger" data-menu-open aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
@@ -53,6 +54,12 @@
     <h1 class="page-title">Épicerie fine</h1>
     <span class="page-rule"></span>
     <p class="page-desc">Les incontournables de l'apéritif : de quoi tremper, tartiner et accompagner vos moments conviviaux. Et pour le sans-alcool, de savoureux jus de fruits, de l'hibiscus, des kombucha, du Ginger Beer et quelques vins et bières sans alcool, à tester sans modération.</p>
+  </section>
+
+  <!-- ============ PRODUITS (gérés depuis le CMS) ============ -->
+  <section class="cms-products" data-cms="produits" data-categorie="epicerie" hidden>
+    <h2 class="cms-products-title">Notre sélection d'épicerie fine</h2>
+    <div class="cms-grid" data-cms-list></div>
   </section>
 
   <!-- ============ FOOTER ============ -->
@@ -84,6 +91,7 @@
         <a href="bieres.html">Bières</a>
         <a href="spiritueux.html">Spiritueux</a>
         <a href="epicerie.html">Épicerie fine</a>
+        <a href="evenements.html">Événements</a>
         <a href="contact.html">Contact</a>
       </div>
         <div class="footer-col">
@@ -145,6 +153,7 @@
       <a href="bieres.html" class="menu-link" data-menu-close>Bières</a>
       <a href="spiritueux.html" class="menu-link" data-menu-close>Spiritueux</a>
       <a href="epicerie.html" class="menu-link is-active" data-menu-close>Épicerie fine</a>
+      <a href="evenements.html" class="menu-link" data-menu-close>Événements</a>
       <a href="contact.html" class="menu-link" data-menu-close>Contact</a>
     </div>
   </div>
@@ -155,5 +164,7 @@
 </div>
 
 <script src="js/main.js"></script>
+<script src="js/cms-config.js"></script>
+<script src="js/cms.js"></script>
 </body>
 </html>
