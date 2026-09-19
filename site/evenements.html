@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Spiritueux — La Cave des P'tits Bonheurs</title>
-<meta name="description" content="Whiskies, rhums et trésors rares. Grands classiques et distillateurs confidentiels.">
+<title>Événements — La Cave des P'tits Bonheurs</title>
+<meta name="description" content="Dégustations, ateliers et soirées à La Cave des P'tits Bonheurs, caviste à Saint-Clément-de-Rivière.">
 <link rel="icon" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,26 +40,27 @@
       <a href="index.html" class="nav-link u-underline">Accueil</a>
       <a href="vins.html" class="nav-link u-underline">Vins</a>
       <a href="bieres.html" class="nav-link u-underline">Bières</a>
-      <a href="spiritueux.html" class="nav-link u-underline is-active">Spiritueux</a>
+      <a href="spiritueux.html" class="nav-link u-underline">Spiritueux</a>
       <a href="epicerie.html" class="nav-link u-underline">Épicerie fine</a>
-      <a href="evenements.html" class="nav-link u-underline">Événements</a>
+      <a href="evenements.html" class="nav-link u-underline is-active">Événements</a>
       <a href="contact.html" class="nav-link u-underline">Contact</a>
     </div>
     <button type="button" class="nav-burger" data-menu-open aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
   </nav>
 
-  <!-- Titre plein écran -->
-  <section class="page-title-section page-title-section--dark">
-    <span class="page-accroche">Qualité et originalité</span>
-    <h1 class="page-title">Spiritueux</h1>
+  <!-- Titre -->
+  <section class="page-title-section page-title-section--dark page-title-section--compact">
+    <span class="page-accroche">Venez partager un moment&nbsp;!</span>
+    <h1 class="page-title">Événements</h1>
     <span class="page-rule"></span>
-    <p class="page-desc">Whiskies, rhums, « Spritz » occitan, gin et vodka botaniques, Armagnac, Calvados… Grands classiques et pépites confidentielles, pour prolonger le repas ou offrir.</p>
+    <p class="page-desc">Dégustations commentées, ateliers et soirées : retrouvez ici tous les rendez-vous de la cave.</p>
   </section>
 
-  <!-- ============ PRODUITS (gérés depuis le CMS) ============ -->
-  <section class="cms-products" data-cms="produits" data-categorie="spiritueux" hidden>
-    <h2 class="cms-products-title">Notre sélection de spiritueux</h2>
-    <div class="cms-grid" data-cms-list></div>
+  <!-- ============ AGENDA (géré depuis le CMS) ============ -->
+  <section class="events-page" data-cms="evenements">
+    <div class="event-list" data-cms-list></div>
+    <p class="events-empty" data-cms-empty hidden>Aucun événement n'est prévu pour le moment. Suivez-nous sur Instagram pour ne rien manquer&nbsp;!</p>
+    <noscript><p class="events-empty">Activez JavaScript pour afficher l'agenda.</p></noscript>
   </section>
 
   <!-- ============ FOOTER ============ -->
@@ -151,9 +152,9 @@
       <a href="index.html" class="menu-link" data-menu-close>Accueil</a>
       <a href="vins.html" class="menu-link" data-menu-close>Vins</a>
       <a href="bieres.html" class="menu-link" data-menu-close>Bières</a>
-      <a href="spiritueux.html" class="menu-link is-active" data-menu-close>Spiritueux</a>
+      <a href="spiritueux.html" class="menu-link" data-menu-close>Spiritueux</a>
       <a href="epicerie.html" class="menu-link" data-menu-close>Épicerie fine</a>
-      <a href="evenements.html" class="menu-link" data-menu-close>Événements</a>
+      <a href="evenements.html" class="menu-link is-active" data-menu-close>Événements</a>
       <a href="contact.html" class="menu-link" data-menu-close>Contact</a>
     </div>
   </div>

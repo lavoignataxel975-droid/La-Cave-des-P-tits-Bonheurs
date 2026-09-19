@@ -43,6 +43,7 @@
       <a href="bieres.html" class="nav-link u-underline">Bières</a>
       <a href="spiritueux.html" class="nav-link u-underline">Spiritueux</a>
       <a href="epicerie.html" class="nav-link u-underline">Épicerie fine</a>
+      <a href="evenements.html" class="nav-link u-underline">Événements</a>
       <a href="contact.html" class="nav-link u-underline">Contact</a>
     </div>
     <button type="button" class="nav-burger" data-menu-open aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
@@ -74,7 +75,7 @@
     <button class="nouv-arrow nouv-arrow--prev" data-carousel-prev aria-label="Précédent" type="button">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
     </button>
-    <div class="nouv-track" data-carousel-track>
+    <div class="nouv-track" data-carousel-track data-cms="nouveautes">
 
       <article class="wine-card">
         <div class="wine-media">
@@ -149,6 +150,18 @@
   </div>
 </section>
 
+<!-- ============ PROCHAINS ÉVÉNEMENTS (gérés depuis le CMS) ============ -->
+<section class="events-home" data-cms="evenements" data-limit="3" hidden>
+  <div class="nouv-head">
+    <div>
+      <h2 class="nouv-title">Prochains événements</h2>
+      <p class="nouv-sub">Dégustations, ateliers et soirées à la cave</p>
+    </div>
+    <a href="evenements.html" class="nouv-link">Tout l'agenda</a>
+  </div>
+  <div class="event-list" data-cms-list></div>
+</section>
+
 <!-- ============ LE MOT DU CAVISTE ============ -->
 <section class="founder">
   <span class="accroche">Le mot du caviste</span>
@@ -168,6 +181,10 @@
   </a>
   <a class="univers-line" href="spiritueux.html">
     <span class="u-name">Spiritueux</span>
+    <svg class="u-arrow" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg>
+  </a>
+  <a class="univers-line" href="epicerie.html">
+    <span class="u-name">Épicerie fine</span>
     <svg class="u-arrow" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg>
   </a>
 </section>
@@ -256,6 +273,7 @@
         <a href="bieres.html">Bières</a>
         <a href="spiritueux.html">Spiritueux</a>
         <a href="epicerie.html">Épicerie fine</a>
+        <a href="evenements.html">Événements</a>
         <a href="contact.html">Contact</a>
       </div>
       <div class="footer-col">
@@ -316,6 +334,7 @@
       <a href="bieres.html" class="menu-link" data-menu-close>Bières</a>
       <a href="spiritueux.html" class="menu-link" data-menu-close>Spiritueux</a>
       <a href="epicerie.html" class="menu-link" data-menu-close>Épicerie fine</a>
+      <a href="evenements.html" class="menu-link" data-menu-close>Événements</a>
       <a href="contact.html" class="menu-link" data-menu-close>Contact</a>
     </div>
   </div>
@@ -326,5 +345,7 @@
 </div>
 
 <script src="js/main.js"></script>
+<script src="js/cms-config.js"></script>
+<script src="js/cms.js"></script>
 </body>
 </html>
