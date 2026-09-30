@@ -10,6 +10,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Source+Sans+3:wght@300;400;600&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+<link rel="stylesheet" href="css/vins-v2.css">
+<link rel="stylesheet" href="css/footer-v2.css">
 </head>
 <body>
 
@@ -48,19 +51,36 @@
     <button type="button" class="nav-burger" data-menu-open aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
   </nav>
 
-  <!-- Titre plein écran -->
-  <section class="page-title-section page-title-section--dark">
-    <span class="page-accroche">Les vins du Pic et d'autres sommets&nbsp;!</span>
-    <h1 class="page-title">Vins</h1>
-    <span class="page-rule"></span>
-    <p class="page-desc">Du Pic Saint-Loup et des Terrasses du Larzac bien sûr, mais aussi une invitation à voyager sur les plus belles appellations de France — plus de 250 références. Rouges de garde, blancs vibrants, rosés de soif et bulles de fête.</p>
-  </section>
+  <!-- ============ SECTION VINS (reprise de la V2) ============ -->
+  <div class="v2s">
+    <section class="page-head">
+      <div class="wrap">
+        <div data-reveal>
+          <nav class="crumbs" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a><span aria-hidden="true">/</span><span>Vins</span></nav>
+          <h1 class="display">Vins</h1>
+          <p class="accroche">Les vins du Pic et d'autres sommets&nbsp;!</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- ============ PRODUITS (gérés depuis le CMS) ============ -->
-  <section class="cms-products" data-cms="produits" data-categorie="vins" hidden>
-    <h2 class="cms-products-title">Notre sélection de vins</h2>
-    <div class="cms-grid" data-cms-list></div>
-  </section>
+    <!-- Produits gérés depuis le CMS -->
+    <section class="section" data-v2-cms="catalogue" data-categorie="vins">
+      <div class="wrap">
+        <div class="catalog-tools" data-tools hidden></div>
+        <p class="count" data-count></p>
+        <div class="grid" data-grid></div>
+        <div class="empty" data-fallback>
+          <span class="kicker">Notre sélection</span>
+          <h2 class="h2" style="font-size:clamp(28px,2vw + 16px,40px)">Elle se découvre <em>à la cave</em>.</h2>
+          <p>Nos références évoluent au fil des arrivages et des saisons. Passez nous voir ou appelez-nous : nous vous conseillons avec plaisir.</p>
+          <div class="actions" style="margin-top:8px;justify-content:center">
+            <a class="btn btn--wine" href="tel:+33616285220">06 16 28 52 20</a>
+            <a class="btn btn--ghost" href="contact.html">Horaires &amp; accès</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
   <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
@@ -166,5 +186,6 @@
 <script src="js/main.js"></script>
 <script src="js/cms-config.js"></script>
 <script src="js/cms.js"></script>
+<script src="js/vins-v2.js"></script>
 </body>
 </html>

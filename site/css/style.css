@@ -1401,8 +1401,11 @@ textarea.field-input { resize: vertical; min-height: 150px; }
 
 .events-home {
   background: var(--c2);
-  padding: 0 clamp(24px, 5vw, 80px) clamp(50px, 8vh, 90px);
+  /* Première section après le hero : plus d'air sous le plein écran. */
+  padding: clamp(190px, 28vh, 295px) clamp(24px, 5vw, 80px) 0;
 }
+/* Même fond que Nouveautés juste en dessous : un seul espace entre les deux blocs. */
+.events-home:not([hidden]) + .nouveautes { padding-top: clamp(44px, 6vh, 70px); }
 .events-page {
   flex: 1;
   background: var(--c2);

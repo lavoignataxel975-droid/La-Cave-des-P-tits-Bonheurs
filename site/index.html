@@ -10,6 +10,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Source+Sans+3:wght@300;400;600&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap">
+<link rel="stylesheet" href="css/accueil-v2.css">
+<link rel="stylesheet" href="css/footer-v2.css">
 </head>
 <body>
 
@@ -61,105 +64,37 @@
   </a>
 </section>
 
-<!-- ============ NOUVEAUTÉS (démo carrousel marché) ============ -->
-<section class="nouveautes">
-  <div class="nouv-head">
-    <div>
-      <h2 class="nouv-title">Nouveautés</h2>
-      <p class="nouv-sub">Découvrez les dernières pépites arrivées à la cave</p>
-    </div>
-    <a href="vins.html" class="nouv-link">Voir la sélection</a>
-  </div>
-
-  <div class="nouv-viewport" data-carousel>
-    <button class="nouv-arrow nouv-arrow--prev" data-carousel-prev aria-label="Précédent" type="button">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-    </button>
-    <div class="nouv-track" data-carousel-track data-cms="nouveautes">
-
-      <article class="wine-card">
-        <div class="wine-media">
-          <svg class="bottle bottle--red" viewBox="0 0 80 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="32" y="4" width="16" height="12" rx="2" fill="#20242a"/><path d="M33 16 L47 16 L47 40 C47 52 60 58 60 86 L60 214 C60 224 54 230 44 230 L36 230 C26 230 20 224 20 214 L20 86 C20 58 33 52 33 40 Z" fill="var(--glass)"/><rect x="22" y="150" width="36" height="52" rx="1" fill="#f4efe3"/><rect x="27" y="163" width="26" height="3" fill="#c4b79c"/><rect x="27" y="173" width="18" height="3" fill="#d6ccb5"/></svg>
-        </div>
-        <div class="wine-info">
-          <h3 class="wine-name">Pommard</h3>
-          <p class="wine-dom">Château de Pommard</p>
-          <div class="wine-meta"><span class="wine-year">2023</span><span class="wine-price">50,00 €</span></div>
-        </div>
-      </article>
-
-      <article class="wine-card">
-        <div class="wine-media">
-          <svg class="bottle bottle--white" viewBox="0 0 80 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="32" y="4" width="16" height="12" rx="2" fill="#20242a"/><path d="M33 16 L47 16 L47 40 C47 52 60 58 60 86 L60 214 C60 224 54 230 44 230 L36 230 C26 230 20 224 20 214 L20 86 C20 58 33 52 33 40 Z" fill="var(--glass)"/><rect x="22" y="150" width="36" height="52" rx="1" fill="#f4efe3"/><rect x="27" y="163" width="26" height="3" fill="#c4b79c"/><rect x="27" y="173" width="18" height="3" fill="#d6ccb5"/></svg>
-        </div>
-        <div class="wine-info">
-          <h3 class="wine-name">Chassagne-Montrachet</h3>
-          <p class="wine-dom">Domaine Morey Coffinet</p>
-          <div class="wine-meta"><span class="wine-year">2024</span><span class="wine-price">60,00 €</span></div>
-        </div>
-      </article>
-
-      <article class="wine-card">
-        <div class="wine-media">
-          <svg class="bottle bottle--white" viewBox="0 0 80 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="32" y="4" width="16" height="12" rx="2" fill="#20242a"/><path d="M33 16 L47 16 L47 40 C47 52 60 58 60 86 L60 214 C60 224 54 230 44 230 L36 230 C26 230 20 224 20 214 L20 86 C20 58 33 52 33 40 Z" fill="var(--glass)"/><rect x="22" y="150" width="36" height="52" rx="1" fill="#f4efe3"/><rect x="27" y="163" width="26" height="3" fill="#c4b79c"/><rect x="27" y="173" width="18" height="3" fill="#d6ccb5"/></svg>
-        </div>
-        <div class="wine-info">
-          <h3 class="wine-name">Chassagne-Montrachet</h3>
-          <p class="wine-dom">Domaine Morey Coffinet</p>
-          <div class="wine-meta"><span class="wine-year">2024</span><span class="wine-price">60,00 €</span></div>
-        </div>
-      </article>
-
-      <article class="wine-card">
-        <div class="wine-media">
-          <svg class="bottle bottle--red" viewBox="0 0 80 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="32" y="4" width="16" height="12" rx="2" fill="#20242a"/><path d="M33 16 L47 16 L47 40 C47 52 60 58 60 86 L60 214 C60 224 54 230 44 230 L36 230 C26 230 20 224 20 214 L20 86 C20 58 33 52 33 40 Z" fill="var(--glass)"/><rect x="22" y="150" width="36" height="52" rx="1" fill="#f4efe3"/><rect x="27" y="163" width="26" height="3" fill="#c4b79c"/><rect x="27" y="173" width="18" height="3" fill="#d6ccb5"/></svg>
-        </div>
-        <div class="wine-info">
-          <h3 class="wine-name">Château des Tours Côtes-du-Rhône Réserve</h3>
-          <p class="wine-dom">Château des Tours (E. Reynaud)</p>
-          <div class="wine-meta"><span class="wine-year">2022</span><span class="wine-price">150,00 €</span></div>
-        </div>
-      </article>
-
-      <article class="wine-card">
-        <div class="wine-media">
-          <svg class="bottle bottle--white" viewBox="0 0 80 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="32" y="4" width="16" height="12" rx="2" fill="#20242a"/><path d="M33 16 L47 16 L47 40 C47 52 60 58 60 86 L60 214 C60 224 54 230 44 230 L36 230 C26 230 20 224 20 214 L20 86 C20 58 33 52 33 40 Z" fill="var(--glass)"/><rect x="22" y="150" width="36" height="52" rx="1" fill="#f4efe3"/><rect x="27" y="163" width="26" height="3" fill="#c4b79c"/><rect x="27" y="173" width="18" height="3" fill="#d6ccb5"/></svg>
-        </div>
-        <div class="wine-info">
-          <h3 class="wine-name">Chassagne-Montrachet</h3>
-          <p class="wine-dom">Domaine Morey Coffinet</p>
-          <div class="wine-meta"><span class="wine-year">2024</span><span class="wine-price">60,00 €</span></div>
-        </div>
-      </article>
-
-      <article class="wine-card">
-        <div class="wine-media">
-          <svg class="bottle bottle--red" viewBox="0 0 80 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="32" y="4" width="16" height="12" rx="2" fill="#20242a"/><path d="M33 16 L47 16 L47 40 C47 52 60 58 60 86 L60 214 C60 224 54 230 44 230 L36 230 C26 230 20 224 20 214 L20 86 C20 58 33 52 33 40 Z" fill="var(--glass)"/><rect x="22" y="150" width="36" height="52" rx="1" fill="#f4efe3"/><rect x="27" y="163" width="26" height="3" fill="#c4b79c"/><rect x="27" y="173" width="18" height="3" fill="#d6ccb5"/></svg>
-        </div>
-        <div class="wine-info">
-          <h3 class="wine-name">Vosne-Romanée</h3>
-          <p class="wine-dom">SCE Domaine Forey Père &amp; Fils</p>
-          <div class="wine-meta"><span class="wine-year">2023</span><span class="wine-price">60,00 €</span></div>
-        </div>
-      </article>
-
-    </div>
-    <button class="nouv-arrow nouv-arrow--next" data-carousel-next aria-label="Suivant" type="button">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-    </button>
+<!-- ============ PROCHAINS ÉVÉNEMENTS (gérés depuis le CMS) — refonte UI UX Pro Max ============ -->
+<section class="hx hx-agenda" data-hx="agenda" data-limit="3" hidden aria-labelledby="hx-agenda-title">
+  <div class="hx-wrap hx-agenda-grid">
+    <header class="hx-agenda-head">
+      <span class="hx-kicker">Agenda</span>
+      <h2 class="hx-h2" id="hx-agenda-title">Les prochains <em>rendez-vous</em></h2>
+      <p class="hx-sub">Dégustations, ateliers et soirées à la cave.</p>
+      <a class="hx-link" href="evenements.html">Tout l'agenda <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></a>
+    </header>
+    <ol class="hx-tickets" data-hx-list></ol>
   </div>
 </section>
 
-<!-- ============ PROCHAINS ÉVÉNEMENTS (gérés depuis le CMS) ============ -->
-<section class="events-home" data-cms="evenements" data-limit="3" hidden>
-  <div class="nouv-head">
-    <div>
-      <h2 class="nouv-title">Prochains événements</h2>
-      <p class="nouv-sub">Dégustations, ateliers et soirées à la cave</p>
-    </div>
-    <a href="evenements.html" class="nouv-link">Tout l'agenda</a>
+<!-- ============ NOUVEAUTÉS (gérées depuis le CMS) — refonte UI UX Pro Max ============ -->
+<section class="hx hx-news" data-hx="nouveautes" aria-labelledby="hx-news-title">
+  <div class="hx-wrap">
+    <header class="hx-news-head">
+      <div>
+        <span class="hx-kicker">Nouveautés</span>
+        <h2 class="hx-h2" id="hx-news-title">Fraîchement <em>arrivées</em></h2>
+      </div>
+      <div class="hx-news-tools">
+        <div class="hx-arrows">
+          <button class="hx-arrow" type="button" data-hx-prev aria-label="Nouveautés précédentes"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <button class="hx-arrow" type="button" data-hx-next aria-label="Nouveautés suivantes"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></button>
+        </div>
+        <a class="hx-link" href="vins.html">Voir toute la cave <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></a>
+      </div>
+    </header>
+    <ul class="hx-rail" data-hx-showcase aria-label="Nouveautés"></ul>
   </div>
-  <div class="event-list" data-cms-list></div>
 </section>
 
 <!-- ============ LE MOT DU CAVISTE ============ -->
@@ -169,24 +104,40 @@
   <div class="founder-sign">François Nathan-Hudson<span>Créateur de La Cave des P'tits Bonheurs</span></div>
 </section>
 
-<!-- ============ NOS UNIVERS (liste épurée) ============ -->
-<section class="univers-simple">
-  <a class="univers-line" href="vins.html">
-    <span class="u-name">Vins</span>
-    <svg class="u-arrow" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg>
-  </a>
-  <a class="univers-line" href="bieres.html">
-    <span class="u-name">Bières</span>
-    <svg class="u-arrow" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg>
-  </a>
-  <a class="univers-line" href="spiritueux.html">
-    <span class="u-name">Spiritueux</span>
-    <svg class="u-arrow" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg>
-  </a>
-  <a class="univers-line" href="epicerie.html">
-    <span class="u-name">Épicerie fine</span>
-    <svg class="u-arrow" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg>
-  </a>
+<!-- ============ LA CAVE — quatre univers (reprise de la V2) ============ -->
+<section class="v2s" id="univers">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div><span class="kicker">La cave</span><h2 class="h2">Quatre univers, <em>une même exigence</em>.</h2></div>
+      <p>Chaque bouteille est goûtée et choisie pour son caractère — des vignerons voisins aux maisons les plus prestigieuses.</p>
+    </div>
+    <div class="univers">
+      <a class="uni" href="vins.html" data-reveal style="--d:0.00s">
+        <span class="uni-num">01</span>
+        <span><span class="uni-title">Vins</span><span class="uni-accroche">Les vins du Pic et d'autres sommets</span></span>
+        <span class="uni-arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></span>
+        <span class="uni-desc">Pic Saint-Loup, Terrasses du Larzac et plus de 250 références des plus belles appellations de France.</span>
+      </a>
+      <a class="uni" href="bieres.html" data-reveal style="--d:0.06s">
+        <span class="uni-num">02</span>
+        <span><span class="uni-title">Bières</span><span class="uni-accroche">Fraîcheur artisanale</span></span>
+        <span class="uni-arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></span>
+        <span class="uni-desc">Brasseurs indépendants : blondes, ambrées, IPA houblonnées et brunes gourmandes.</span>
+      </a>
+      <a class="uni" href="spiritueux.html" data-reveal style="--d:0.12s">
+        <span class="uni-num">03</span>
+        <span><span class="uni-title">Spiritueux</span><span class="uni-accroche">Qualité et originalité</span></span>
+        <span class="uni-arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></span>
+        <span class="uni-desc">Whiskies, rhums, gins botaniques, Armagnac, Calvados — classiques et pépites confidentielles.</span>
+      </a>
+      <a class="uni" href="epicerie.html" data-reveal style="--d:0.18s">
+        <span class="uni-num">04</span>
+        <span><span class="uni-title">Épicerie fine</span><span class="uni-accroche">Les incontournables de l'apéro</span></span>
+        <span class="uni-arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></span>
+        <span class="uni-desc">De quoi tremper, tartiner, accompagner — et une belle gamme sans alcool.</span>
+      </a>
+    </div>
+  </div>
 </section>
 
 <!-- ============ NOS AVIS GOOGLE ============ -->
@@ -347,5 +298,7 @@
 <script src="js/main.js"></script>
 <script src="js/cms-config.js"></script>
 <script src="js/cms.js"></script>
+<script src="js/vins-v2.js"></script>
+<script src="js/accueil-v2.js"></script>
 </body>
 </html>

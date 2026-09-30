@@ -10,6 +10,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Source+Sans+3:wght@300;400;600&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+<link rel="stylesheet" href="css/vins-v2.css">
+<link rel="stylesheet" href="css/footer-v2.css">
 </head>
 <body>
 
@@ -48,20 +51,29 @@
     <button type="button" class="nav-burger" data-menu-open aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
   </nav>
 
-  <!-- Titre -->
-  <section class="page-title-section page-title-section--dark page-title-section--compact">
-    <span class="page-accroche">Venez partager un moment&nbsp;!</span>
-    <h1 class="page-title">Événements</h1>
-    <span class="page-rule"></span>
-    <p class="page-desc">Dégustations commentées, ateliers et soirées : retrouvez ici tous les rendez-vous de la cave.</p>
-  </section>
+  <!-- ============ SECTION ÉVÉNEMENTS (même design que la section Vins, reprise de la V2) ============ -->
+  <div class="v2s">
+    <section class="page-head">
+      <div class="wrap">
+        <div data-reveal>
+          <nav class="crumbs" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a><span aria-hidden="true">/</span><span>Événements</span></nav>
+          <h1 class="display">Événements</h1>
+          <p class="accroche">Venez partager un moment&nbsp;!</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- ============ AGENDA (géré depuis le CMS) ============ -->
-  <section class="events-page" data-cms="evenements">
-    <div class="event-list" data-cms-list></div>
-    <p class="events-empty" data-cms-empty hidden>Aucun événement n'est prévu pour le moment. Suivez-nous sur Instagram pour ne rien manquer&nbsp;!</p>
-    <noscript><p class="events-empty">Activez JavaScript pour afficher l'agenda.</p></noscript>
-  </section>
+    <!-- Événements gérés depuis le CMS -->
+    <section class="section" data-v2-cms="agenda">
+      <div class="wrap">
+        <div class="events" data-list></div>
+        <div class="empty" data-empty hidden>
+          <p>Aucun événement n'est prévu pour le moment. Suivez-nous sur Instagram pour ne rien manquer&nbsp;!</p>
+          <a class="btn btn--ghost" href="https://www.instagram.com/lacavedesptitsbonheurs/" target="_blank" rel="noopener">Suivre la cave sur Instagram</a>
+        </div>
+      </div>
+    </section>
+  </div>
 
   <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
@@ -167,5 +179,6 @@
 <script src="js/main.js"></script>
 <script src="js/cms-config.js"></script>
 <script src="js/cms.js"></script>
+<script src="js/vins-v2.js"></script>
 </body>
 </html>

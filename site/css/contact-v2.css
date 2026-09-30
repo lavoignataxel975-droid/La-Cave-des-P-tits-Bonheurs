@@ -1,0 +1,63 @@
+/* ============================================================
+   Page Contact — même design que les autres pages (reprise de la V2) :
+   fond ivoire, Playfair Display + Inter, formulaire en carte.
+   L'organisation de la page est inchangée. Fichier chargé uniquement par contact.html.
+   ============================================================ */
+.contact-section {
+  --paper: #f4efe4;
+  --card: #fbf8f2;
+  --ink: #1c1917;
+  --ink-2: #4a433c;
+  --muted: #6b6258;
+  --line: #d8cfbf;
+  --wine: #7b2233;
+  --wine-dark: #5f1826;
+  --ff-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --ff-ui: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--ff-ui);
+  -webkit-font-smoothing: antialiased;
+}
+.contact-section *, .contact-section *::before, .contact-section *::after { box-sizing: border-box; }
+.contact-section :focus-visible { outline: 2px solid var(--wine); outline-offset: 3px; border-radius: 4px; }
+
+/* fil d'Ariane + titre */
+.contact-section .breadcrumb { font-family: var(--ff-ui); font-size: 13px; letter-spacing: 0; text-transform: none; color: var(--muted); }
+.contact-section .breadcrumb a { color: var(--muted); }
+.contact-section .breadcrumb a:hover { color: var(--ink); }
+.contact-section .contact-title {
+  font-family: var(--ff-display); font-weight: 500; font-size: clamp(52px, 6vw + 12px, 112px);
+  letter-spacing: -.01em; text-transform: none; line-height: 1.04; color: var(--ink); margin-top: 18px;
+}
+.contact-section .contact-rule { background: var(--wine); }
+
+/* coordonnées */
+.contact-section .info-label { font-family: var(--ff-ui); font-size: 12px; font-weight: 600; letter-spacing: .12em; color: var(--muted); }
+.contact-section .info-value { font-family: var(--ff-ui); font-weight: 400; font-size: 17px; line-height: 1.6; color: var(--ink); }
+.contact-section .info-value--link { color: var(--wine); font-weight: 600; }
+.contact-section .info-value--link:hover { color: var(--wine-dark); }
+.contact-section .info-value--email { font-size: 16px; }
+.contact-section .info-gps { font-family: var(--ff-ui); font-weight: 400; font-size: 15px; letter-spacing: 0; color: var(--ink-2); }
+.contact-section .info-block { padding-bottom: 22px; border-bottom: 1px solid var(--line); }
+
+/* formulaire en carte */
+.contact-section .contact-form { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: clamp(24px, 4vw, 44px); }
+.contact-section .field-label { font-family: var(--ff-ui); font-size: 13px; font-weight: 600; letter-spacing: 0; text-transform: none; color: var(--ink-2); }
+.contact-section .field-input {
+  background: var(--paper); color: var(--ink); border: 1px solid var(--line); border-radius: 10px;
+  font-family: var(--ff-ui); font-size: 16px; min-height: 50px; padding: 12px 16px;
+  transition: border-color .2s, box-shadow .2s;
+}
+.contact-section .field-input::placeholder { color: var(--muted); }
+.contact-section .field-input:focus { border-color: var(--wine); box-shadow: 0 0 0 3px rgba(123, 34, 51, .15); }
+.contact-section .btn-send {
+  font-family: var(--ff-ui); font-size: 15px; font-weight: 600; letter-spacing: .01em; text-transform: none;
+  color: #fff; background: var(--wine); border-radius: 999px; min-height: 50px; padding: 0 30px;
+  transition: background-color .2s;
+}
+.contact-section .btn-send:hover { background: var(--wine-dark); color: #fff; }
+.contact-section .btn-send:disabled:hover { background: var(--wine); color: #fff; }
+.contact-section .sent-msg { font-family: var(--ff-ui); font-size: 14px; letter-spacing: 0; color: #2f6d45; }
+.contact-section .sent-msg.is-error { color: #a1301f; }
+
